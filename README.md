@@ -8,6 +8,7 @@
 4. 각 viewDidLoad() function에서 "print(#file, #line, #function, #column)" 출력
 
 	-> Item1 : /Users/harrison.tom/Desktop/xcode/210111/swift-w2-profile/KaKaoProfile/KaKaoProfile/ViewController.swift 15 viewDidLoad() 51
+	
 	-> Item2 : /Users/harrison.tom/Desktop/xcode/210111/swift-w2-profile/KaKaoProfile/KaKaoProfile/ViewController2.swift 15 viewDidLoad() 51
 	
 	
