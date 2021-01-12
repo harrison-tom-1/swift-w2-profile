@@ -10,12 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var profileImage: UIImageView!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    @IBAction func editButton(_ sender: Any) {
+        self.nameLabel.textColor = UIColor.blue
+        self.nameLabel.backgroundColor = UIColor.yellow
+        self.nameLabel.alpha = 0.5
+        self.descriptionLabel.text = "크루미션"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Item1 :", #file, #line, #function, #column)
+        self.nameLabel.text = "Harrison"
+        self.descriptionLabel.text = "이준형"
         // Do any additional setup after loading the view.
+    
     }
 
-
+    
 }
 
