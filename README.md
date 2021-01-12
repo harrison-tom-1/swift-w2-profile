@@ -7,6 +7,11 @@
 3. viewDidLoad() 함수내에 Label Text 지정 코드 추가
 4. editButton() 함수내에서 버튼 press 시 Label text property 변경 기능 추가
 
+<img width="150" alt="스크린샷 2021-01-12 오전 10 01 17" src="https://user-images.githubusercontent.com/59315024/104262783-9fbd2700-54cb-11eb-9435-9c549dc45441.png">
+<img width="150" alt="스크린샷 2021-01-12 오전 10 01 10" src="https://user-images.githubusercontent.com/59315024/104262785-a21f8100-54cb-11eb-892b-17c98fb633dd.png">
+
+
+
 # 2021.01.11 - step1
 1. TabBar Controller 추가 및 Initial ViewContoller로 지정 - Bar Title -> Item1
 2. 또 다른 View Controller 생성 후 Bar Title -> Item2
