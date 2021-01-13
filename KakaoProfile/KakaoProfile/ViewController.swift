@@ -11,9 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var profileImage: UIImageView!
-    
     @IBOutlet weak var nameLabel: UILabel!
-    
     @IBOutlet weak var descriptionLabel: UILabel!
     
     @IBAction func editButton(_ sender: Any) {
@@ -27,10 +25,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.nameLabel.text = "Harrison"
         self.descriptionLabel.text = "이준형"
-        // Do any additional setup after loading the view.
-    
     }
-
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? LoginViewController {
+            destination.nameText = self.nameLabel.text
+            destination.descriptionText = self.descriptionLabel.text
+        }
+    }
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C766507825AD482500859E67 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C766507725AD482500859E67 /* LoginViewController.swift */; };
+		C796365725AEFA64005B7C18 /* image1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C796365625AEFA64005B7C18 /* image1.jpeg */; };
 		C7D4FD9425AC6E5B0017F616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4FD9325AC6E5B0017F616 /* AppDelegate.swift */; };
 		C7D4FD9625AC6E5B0017F616 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4FD9525AC6E5B0017F616 /* SceneDelegate.swift */; };
 		C7D4FD9825AC6E5B0017F616 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4FD9725AC6E5B0017F616 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C766507725AD482500859E67 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = KakaoProfile/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		C796365625AEFA64005B7C18 /* image1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image1.jpeg; path = KakaoProfile/image1.jpeg; sourceTree = SOURCE_ROOT; };
 		C7D4FD9025AC6E5B0017F616 /* KaKaoProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaKaoProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D4FD9325AC6E5B0017F616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7D4FD9525AC6E5B0017F616 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				C7D4FD9525AC6E5B0017F616 /* SceneDelegate.swift */,
 				C7D4FD9725AC6E5B0017F616 /* ViewController.swift */,
 				C7D4FDC325AC6FC60017F616 /* ViewController2.swift */,
+				C796365625AEFA64005B7C18 /* image1.jpeg */,
+				C766507725AD482500859E67 /* LoginViewController.swift */,
 				C7D4FD9925AC6E5B0017F616 /* Main.storyboard */,
 				C7D4FD9C25AC6E5C0017F616 /* Assets.xcassets */,
 				C7D4FD9E25AC6E5C0017F616 /* LaunchScreen.storyboard */,
@@ -210,7 +216,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C7D4FD8B25AC6E5B0017F616 /* Build configuration list for PBXProject "KaKaoProfile" */;
+			buildConfigurationList = C7D4FD8B25AC6E5B0017F616 /* Build configuration list for PBXProject "KakaoProfile" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -238,6 +244,7 @@
 				C7D4FDA025AC6E5C0017F616 /* LaunchScreen.storyboard in Resources */,
 				C7D4FD9D25AC6E5C0017F616 /* Assets.xcassets in Resources */,
 				C7D4FD9B25AC6E5B0017F616 /* Main.storyboard in Resources */,
+				C796365725AEFA64005B7C18 /* image1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +272,7 @@
 				C7D4FD9825AC6E5B0017F616 /* ViewController.swift in Sources */,
 				C7D4FDC425AC6FC60017F616 /* ViewController2.swift in Sources */,
 				C7D4FD9425AC6E5B0017F616 /* AppDelegate.swift in Sources */,
+				C766507825AD482500859E67 /* LoginViewController.swift in Sources */,
 				C7D4FD9625AC6E5B0017F616 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,7 +565,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C7D4FD8B25AC6E5B0017F616 /* Build configuration list for PBXProject "KaKaoProfile" */ = {
+		C7D4FD8B25AC6E5B0017F616 /* Build configuration list for PBXProject "KakaoProfile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C7D4FDB825AC6E5C0017F616 /* Debug */,

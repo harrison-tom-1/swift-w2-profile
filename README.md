@@ -1,6 +1,14 @@
 # swift-w2-profile
 모바일 2주차 프로필 저장소
 
+# 2021.01.13 - step3
+1. segue 구현
+2. LoginViewController init
+
+<img width="150" src="https://user-images.githubusercontent.com/59315024/104438753-b0f15b00-55d3-11eb-8837-c386282beedd.png">
+<img width="150" src="https://user-images.githubusercontent.com/59315024/104438758-b2bb1e80-55d3-11eb-91b8-fe09a4ce71a9.png">
+<img width="150" src="https://user-images.githubusercontent.com/59315024/104438761-b484e200-55d3-11eb-81b2-57327820c827.png">
+
 # 2021.01.12 - step2
 1. Item1 첫번째 화면에 ImageView, Label, Button 생성 후 IBOutlet 연결
 2. UIButton 생성 후 IBAction 연결
