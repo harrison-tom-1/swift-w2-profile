@@ -10,21 +10,37 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    var nameText : String!
+    var descriptionText : String!
+    @IBOutlet weak var selectImageButton: UIButton!
+    @IBOutlet weak var profileImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(#file, #line, #function, #column)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.selectImageButton.layer.cornerRadius = self.selectImageButton.layer.frame.size.width/2
+        profileImage.image = UIImage(named: "image1.jpeg")
+        profileImage.layer.cornerRadius = profileImage.frame.width/8
+        profileImage.clipsToBounds = true
 
-        // Do any additional setup after loading the view.
+       print(#file, #line, #function, #column)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        print(#file, #line, #function, #column)
     }
-    */
-
+    override func viewWillDisappear(_ animated: Bool) {
+        print(#file, #line, #function, #column)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        print(#file, #line, #function, #column)
+    }
+   
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+        
+    }
 }
