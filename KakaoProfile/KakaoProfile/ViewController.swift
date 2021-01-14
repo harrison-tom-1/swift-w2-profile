@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.nameLabel.text = "Harrison"
         self.descriptionLabel.text = "안녕하세요."
-        self.profileImage.image = UIImage(named : "image1.jpeg")
+        self.profileImage.image = UIImage(named : "Images/image1.jpeg")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -39,3 +39,15 @@ extension ViewController: SendDataDelegate{
     }
 }
 
+extension UIViewController{
+    func showToast(vc: UIViewController, msg: String, sec: Double) {
+        let alert = UIAlertController(title: nil, message: msg, preferredStyle: .alert)
+            
+        vc.present(alert, animated: true, completion: nil)
+            
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + sec) {
+            alert.dismiss(animated: true, completion: nil)
+        }
+    }
+
+}
