@@ -8,11 +8,9 @@
 import Foundation
 import UIKit
 
-
 protocol SendDataDelegate: class {
     func sendData(name: String, description: String, image: UIImage)
 }
-
 
 class EditViewController: UIViewController {
 
@@ -21,26 +19,20 @@ class EditViewController: UIViewController {
     var profile : UIImage?
     var delegate: SendDataDelegate?
     
-    
     @IBOutlet weak var selectImageButton: UIButton!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.initProfile()
-        
     }
 
     let imagePickerController = UIImagePickerController()
     
     private func initProfile() {
         imagePickerController.delegate = self
-        
         
         self.selectImageButton.layer.cornerRadius = self.selectImageButton.layer.frame.size.width/2
 
@@ -54,9 +46,9 @@ class EditViewController: UIViewController {
     }
    
     @IBAction func attachedImage(_ sender: Any) {
-        let alert =  UIAlertController(title: "어디서 가져올까요?", message: "카메라 기능은 지금 안돼요.", preferredStyle: .actionSheet)
-        let library =  UIAlertAction(title: "사진앨범", style: .default) { (action) in self.openLibrary()}
-        let camera =  UIAlertAction(title: "카메라", style: .default) { (action) in self.openCamera() }
+        let alert = UIAlertController(title: "어디서 가져올까요?", message: "카메라 기능은 지금 안돼요.", preferredStyle: .actionSheet)
+        let library = UIAlertAction(title: "사진앨범", style: .default) { (action) in self.openLibrary()}
+        let camera = UIAlertAction(title: "카메라", style: .default) { (action) in self.openCamera() }
         let cancel = UIAlertAction(title: "취소", style: .cancel, handler: nil)
 
         alert.addAction(library)
@@ -67,18 +59,12 @@ class EditViewController: UIViewController {
     }
     
     @IBAction func pressDoneBtn(_ sender: Any) {
-        print(nameTextField.text! + "을 보낸다\n")
-        if self.delegate == nil {
-            print("nil이래")
-        }
         self.delegate?.sendData(name: nameTextField.text!, description: descriptionTextField.text!, image: profileImage.image!)
-        print(nameTextField.text! + "을 보낸다")
         self.dismiss(animated: true)
     }
     
     @IBAction func back(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
-        
     }
     
     func openLibrary(){
@@ -93,11 +79,10 @@ class EditViewController: UIViewController {
             present(imagePickerController, animated: false, completion: nil)
         }
         else{
-            print("Camera not available")
+            showToast(vc: self, msg: "카메라 동작 안됨.", sec: 0.5)
         }
     }
 }
-
 
 extension EditViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
@@ -109,8 +94,7 @@ extension EditViewController : UIImagePickerControllerDelegate, UINavigationCont
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
              profileImage.image = image
              print(info)
-         }
-
+        }
          dismiss(animated: true, completion: nil)
      }
 }
