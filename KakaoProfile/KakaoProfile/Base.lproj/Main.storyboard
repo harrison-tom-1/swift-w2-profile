@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IC5-B3-dam">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 1-->
+        <!--Profile-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KaKaoProfile" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,9 +20,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIs-yb-tN4">
-                                <rect key="frame" x="164" y="518" width="46" height="30"/>
+                                <rect key="frame" x="150" y="518" width="75" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Edit Profile"/>
                                 <connections>
                                     <segue destination="bQG-4V-tYR" kind="presentation" id="J9R-7U-de3"/>
                                 </connections>
@@ -45,7 +45,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="G9z-79-Wbb"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="p.square.fill" catalog="system" selectedImage="p.square.fill" id="G9z-79-Wbb"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="jAa-uG-RM7" id="RtH-BI-XOD"/>
                         <outlet property="nameLabel" destination="R58-Rq-j7R" id="uDp-on-vtY"/>
@@ -152,40 +152,113 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="kiM-vB-XiF"/>
-                        <segue destination="UPF-Gj-KXP" kind="relationship" relationship="viewControllers" id="d9t-Vy-Wl7"/>
+                        <segue destination="mGO-hi-VxN" kind="relationship" relationship="viewControllers" id="d9t-Vy-Wl7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uUN-lh-O6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-18622" y="309"/>
         </scene>
-        <!--Item 2-->
+        <!--Login View Controller-->
         <scene sceneID="fwI-CU-ZVN">
             <objects>
-                <viewController id="UPF-Gj-KXP" customClass="ViewController2" customModule="KaKaoProfile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UPF-Gj-KXP" customClass="LoginViewController" customModule="KaKaoProfile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fVv-zo-6Ed">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hp9-ID-pyN">
-                                <rect key="frame" x="128" y="400" width="185" height="97"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JF3-eL-eF2">
+                                <rect key="frame" x="170" y="425" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="63"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="login"/>
+                                <connections>
+                                    <action selector="pushLoginBtn:" destination="UPF-Gj-KXP" eventType="touchUpInside" id="Lhl-ZN-l9Z"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vRd-7u-pg1">
+                                <rect key="frame" x="102" y="318" width="170" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a9A-fe-wJ6">
+                                <rect key="frame" x="102" y="360" width="170" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C5f-56-jDL">
+                                <rect key="frame" x="67" y="146" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.96848052740097046" green="0.90452750650745273" blue="0.22107048196767068" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="EFA-RL-b1l"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="N68-Jd-5rA"/>
+                    <navigationItem key="navigationItem" id="My3-G3-5lg"/>
+                    <connections>
+                        <outlet property="inputIdField" destination="vRd-7u-pg1" id="yFz-eK-ome"/>
+                        <outlet property="inputPwdField" destination="a9A-fe-wJ6" id="5Kk-TD-f4t"/>
+                        <outlet property="kakaoLogo" destination="C5f-56-jDL" id="4mz-9K-Vk2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oxa-G9-t5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-17684" y="613"/>
+            <point key="canvasLocation" x="-16744.799999999999" y="612.14392803598207"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="4ex-pb-f9e">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" id="z5b-3m-94b" customClass="MainViewController" customModule="KaKaoProfile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="38I-0x-XOG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EDF-5t-kMb">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="G1R-o1-Aqj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4t1-fF-siK"/>
+                    <connections>
+                        <outlet property="webView" destination="EDF-5t-kMb" id="nDe-yh-n7O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZKG-tV-ryj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15924" y="609.44527736131943"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="Tgg-Fy-WSh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mGO-hi-VxN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Login" image="l.square.fill" catalog="system" id="N68-Jd-5rA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pFO-i1-CVV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UPF-Gj-KXP" kind="relationship" relationship="rootViewController" id="gA6-Fq-cPP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yrV-wT-YjE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17684" y="612.14392803598207"/>
         </scene>
     </scenes>
     <resources>
         <image name="camera.fill" catalog="system" width="128" height="96"/>
+        <image name="l.square.fill" catalog="system" width="128" height="114"/>
+        <image name="p.square.fill" catalog="system" width="128" height="114"/>
     </resources>
 </document>

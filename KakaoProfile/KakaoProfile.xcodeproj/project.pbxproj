@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C766507825AD482500859E67 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C766507725AD482500859E67 /* LoginViewController.swift */; };
-		C796365725AEFA64005B7C18 /* image1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C796365625AEFA64005B7C18 /* image1.jpeg */; };
+		C726C99925B03B4B0098195F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C726C99825B03B4B0098195F /* MainViewController.swift */; };
+		C726C99C25B0413B0098195F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C726C99B25B0413B0098195F /* WebKit.framework */; };
+		C726C9A025B042510098195F /* Images in Resources */ = {isa = PBXBuildFile; fileRef = C726C99F25B042510098195F /* Images */; };
+		C726C9A225B042BB0098195F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C726C9A125B042BB0098195F /* LoginViewController.swift */; };
+		C766507825AD482500859E67 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C766507725AD482500859E67 /* EditViewController.swift */; };
 		C7D4FD9425AC6E5B0017F616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4FD9325AC6E5B0017F616 /* AppDelegate.swift */; };
 		C7D4FD9625AC6E5B0017F616 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4FD9525AC6E5B0017F616 /* SceneDelegate.swift */; };
 		C7D4FD9825AC6E5B0017F616 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4FD9725AC6E5B0017F616 /* ViewController.swift */; };
@@ -17,7 +20,6 @@
 		C7D4FDA025AC6E5C0017F616 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D4FD9E25AC6E5C0017F616 /* LaunchScreen.storyboard */; };
 		C7D4FDAB25AC6E5C0017F616 /* KaKaoProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4FDAA25AC6E5C0017F616 /* KaKaoProfileTests.swift */; };
 		C7D4FDB625AC6E5C0017F616 /* KaKaoProfileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4FDB525AC6E5C0017F616 /* KaKaoProfileUITests.swift */; };
-		C7D4FDC425AC6FC60017F616 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4FDC325AC6FC60017F616 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C766507725AD482500859E67 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = KakaoProfile/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
-		C796365625AEFA64005B7C18 /* image1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image1.jpeg; path = KakaoProfile/image1.jpeg; sourceTree = SOURCE_ROOT; };
+		C726C99825B03B4B0098195F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = KakaoProfile/MainViewController.swift; sourceTree = SOURCE_ROOT; };
+		C726C99B25B0413B0098195F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C726C99F25B042510098195F /* Images */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Images; path = KakaoProfile/Images; sourceTree = SOURCE_ROOT; };
+		C726C9A125B042BB0098195F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = KakaoProfile/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		C766507725AD482500859E67 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditViewController.swift; path = KakaoProfile/EditViewController.swift; sourceTree = SOURCE_ROOT; };
 		C7D4FD9025AC6E5B0017F616 /* KaKaoProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaKaoProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D4FD9325AC6E5B0017F616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7D4FD9525AC6E5B0017F616 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +59,6 @@
 		C7D4FDB125AC6E5C0017F616 /* KaKaoProfileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaKaoProfileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D4FDB525AC6E5C0017F616 /* KaKaoProfileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaKaoProfileUITests.swift; sourceTree = "<group>"; };
 		C7D4FDB725AC6E5C0017F616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7D4FDC325AC6FC60017F616 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C726C99C25B0413B0098195F /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C726C99A25B0413A0098195F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C726C99B25B0413B0098195F /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C7D4FD8725AC6E5B0017F616 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +102,7 @@
 				C7D4FDA925AC6E5C0017F616 /* KaKaoProfileTests */,
 				C7D4FDB425AC6E5C0017F616 /* KaKaoProfileUITests */,
 				C7D4FD9125AC6E5B0017F616 /* Products */,
+				C726C99A25B0413A0098195F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,13 +122,14 @@
 				C7D4FD9325AC6E5B0017F616 /* AppDelegate.swift */,
 				C7D4FD9525AC6E5B0017F616 /* SceneDelegate.swift */,
 				C7D4FD9725AC6E5B0017F616 /* ViewController.swift */,
-				C7D4FDC325AC6FC60017F616 /* ViewController2.swift */,
-				C796365625AEFA64005B7C18 /* image1.jpeg */,
-				C766507725AD482500859E67 /* LoginViewController.swift */,
+				C726C9A125B042BB0098195F /* LoginViewController.swift */,
+				C766507725AD482500859E67 /* EditViewController.swift */,
+				C726C99825B03B4B0098195F /* MainViewController.swift */,
 				C7D4FD9925AC6E5B0017F616 /* Main.storyboard */,
 				C7D4FD9C25AC6E5C0017F616 /* Assets.xcassets */,
-				C7D4FD9E25AC6E5C0017F616 /* LaunchScreen.storyboard */,
 				C7D4FDA125AC6E5C0017F616 /* Info.plist */,
+				C726C99F25B042510098195F /* Images */,
+				C7D4FD9E25AC6E5C0017F616 /* LaunchScreen.storyboard */,
 			);
 			path = KaKaoProfile;
 			sourceTree = "<group>";
@@ -244,7 +259,7 @@
 				C7D4FDA025AC6E5C0017F616 /* LaunchScreen.storyboard in Resources */,
 				C7D4FD9D25AC6E5C0017F616 /* Assets.xcassets in Resources */,
 				C7D4FD9B25AC6E5B0017F616 /* Main.storyboard in Resources */,
-				C796365725AEFA64005B7C18 /* image1.jpeg in Resources */,
+				C726C9A025B042510098195F /* Images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,10 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C726C9A225B042BB0098195F /* LoginViewController.swift in Sources */,
 				C7D4FD9825AC6E5B0017F616 /* ViewController.swift in Sources */,
-				C7D4FDC425AC6FC60017F616 /* ViewController2.swift in Sources */,
 				C7D4FD9425AC6E5B0017F616 /* AppDelegate.swift in Sources */,
-				C766507825AD482500859E67 /* LoginViewController.swift in Sources */,
+				C726C99925B03B4B0098195F /* MainViewController.swift in Sources */,
+				C766507825AD482500859E67 /* EditViewController.swift in Sources */,
 				C7D4FD9625AC6E5B0017F616 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
