@@ -1,6 +1,33 @@
 # swift-w2-profile
 모바일 2주차 프로필 저장소
 
+# 2021.01.14 - step5
+1. LoginViewController 구현 
+2. login logic 및 앱 전환 구현
+3. WKWebView 구현
+4. showToast 구현
+5. 불필요한 공백 제거
+
+<img width="150" src="https://user-images.githubusercontent.com/59315024/104583992-355fde80-56a5-11eb-9aae-3b53200e27e7.png">
+<img width="150" src="https://user-images.githubusercontent.com/59315024/104584055-50cae980-56a5-11eb-8684-23789391d196.png">
+<img width="150" src="https://user-images.githubusercontent.com/59315024/104584081-5cb6ab80-56a5-11eb-9f07-ac6d83fe29d5.png">
+
+# 2021.01.14 - step4
+1. editProfile 기능 구현
+
+<img width="150" src="https://user-images.githubusercontent.com/59315024/104563690-50beef80-568d-11eb-93d8-ddbea8e9e4a0.png">
+<img width="150" src="https://user-images.githubusercontent.com/59315024/104563778-71874500-568d-11eb-81ca-bbc4fd65cf97.png">
+<img width="150" src="https://user-images.githubusercontent.com/59315024/104563796-777d2600-568d-11eb-9e21-96768e032dbb.png">
+
+
+# 2021.01.13 - step3
+1. segue 구현
+2. LoginViewController init
+
+<img width="150" src="https://user-images.githubusercontent.com/59315024/104438753-b0f15b00-55d3-11eb-8837-c386282beedd.png">
+<img width="150" src="https://user-images.githubusercontent.com/59315024/104438758-b2bb1e80-55d3-11eb-91b8-fe09a4ce71a9.png">
+<img width="150" src="https://user-images.githubusercontent.com/59315024/104438761-b484e200-55d3-11eb-81b2-57327820c827.png">
+
 # 2021.01.12 - step2
 1. Item1 첫번째 화면에 ImageView, Label, Button 생성 후 IBOutlet 연결
 2. UIButton 생성 후 IBAction 연결
@@ -19,4 +46,3 @@
 4. 각 viewDidLoad() function에서 "print(#file, #line, #function, #column)" 출력
 	-> Item1 : /Users/harrison.tom/Desktop/xcode/210111/swift-w2-profile/KaKaoProfile/KaKaoProfile/ViewController.swift 15 viewDidLoad() 51
 	-> Item2 : /Users/harrison.tom/Desktop/xcode/210111/swift-w2-profile/KaKaoProfile/KaKaoProfile/ViewController2.swift 15 viewDidLoad() 51
-
