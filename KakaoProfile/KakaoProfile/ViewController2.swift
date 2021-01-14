@@ -14,7 +14,4 @@ class ViewController2: UIViewController {
         super.viewDidLoad()
         print("Item2 :", #file, #line, #function, #column)
     }
-    
-
-
 }
