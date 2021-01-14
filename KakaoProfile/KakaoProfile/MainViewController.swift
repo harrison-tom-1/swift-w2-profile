@@ -6,25 +6,25 @@
 //  Copyright © 2021 이준형. All rights reserved.
 //
 
+import Foundation
 import UIKit
+import WebKit
 
 class MainViewController: UIViewController {
+    @IBOutlet var webView: WKWebView!
+    
+    let url = URL(string: "https://m.daum.net")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        showToast(vc: self, msg: "로그인되었습니다.", sec: 1.0)
+        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.title = "뉴스"
+        let request = URLRequest(url: url!)
+        self.webView.load(request)
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
-    */
-
 }
