@@ -9,22 +9,32 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
+    @IBOutlet var kakaoLogo: UIImageView!
+    @IBOutlet var inputIdField: UITextField!
+    @IBOutlet var inputPwdField: UITextField!
+    
+    private var ID : String = "harrison"
+    private var PWD : String = "0000"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        initProfile()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func initProfile () {
+        self.kakaoLogo.image = UIImage(named: "Images/KakaoImage")
     }
-    */
 
+    @IBAction func pushLoginBtn(_ sender: Any) {
+        if ID == inputIdField.text && PWD == inputPwdField.text
+        {
+            guard let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "MainVC") else { return }
+            self.navigationController?.pushViewController(mainVC, animated: true)
+        }
+        else {
+            showToast(vc: self, msg: "다시 입력하세요.", sec: 1.0)
+        }
+    }
 }
+
