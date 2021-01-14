@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class EditViewController: UIViewController {
 
     var nameText : String!
     var descriptionText : String!
