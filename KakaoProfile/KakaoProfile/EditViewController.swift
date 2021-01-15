@@ -14,10 +14,10 @@ protocol SendDataDelegate: class {
 
 class EditViewController: UIViewController {
 
-    var nameText : String?
-    var descriptionText : String?
-    var profile : UIImage?
-    var delegate: SendDataDelegate?
+    private var nameText : String = ""
+    private var descriptionText : String = ""
+    private var profile : UIImage?
+    public var delegate: SendDataDelegate?
     
     @IBOutlet weak var selectImageButton: UIButton!
     @IBOutlet weak var profileImage: UIImageView!
@@ -29,10 +29,15 @@ class EditViewController: UIViewController {
         self.initProfile()
     }
 
-    let imagePickerController = UIImagePickerController()
+    private var imagePickerController : UIImagePickerController?
+    
+    public func changeProfile(name : String, description : String, profile : UIImage){
+        self.nameText = name
+        self.descriptionText = description
+        self.profile = profile
+    }
     
     private func initProfile() {
-        imagePickerController.delegate = self
         
         self.selectImageButton.layer.cornerRadius = self.selectImageButton.layer.frame.size.width/2
 
@@ -46,6 +51,10 @@ class EditViewController: UIViewController {
     }
    
     @IBAction func attachedImage(_ sender: Any) {
+        imagePickerController = UIImagePickerController()
+        if ( imagePickerController != nil ){
+            imagePickerController!.delegate = self
+        }
         let alert = UIAlertController(title: "어디서 가져올까요?", message: "카메라 기능은 지금 안돼요.", preferredStyle: .actionSheet)
         let library = UIAlertAction(title: "사진앨범", style: .default) { (action) in self.openLibrary()}
         let camera = UIAlertAction(title: "카메라", style: .default) { (action) in self.openCamera() }
@@ -67,16 +76,17 @@ class EditViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    func openLibrary(){
-      imagePickerController.sourceType = .photoLibrary
-      present(imagePickerController, animated: false, completion: nil)
-
+    private func openLibrary(){
+        if ( imagePickerController != nil ){
+            imagePickerController!.sourceType = .photoLibrary
+            present(imagePickerController!, animated: false, completion: nil)
+        }
     }
 
-    func openCamera(){
+    private func openCamera(){
         if(UIImagePickerController .isSourceTypeAvailable(.camera)){
-            imagePickerController.sourceType = .camera
-            present(imagePickerController, animated: false, completion: nil)
+            imagePickerController!.sourceType = .camera
+            present(imagePickerController!, animated: false, completion: nil)
         }
         else{
             showToast(vc: self, msg: "카메라 동작 안됨.", sec: 0.5)
@@ -85,15 +95,11 @@ class EditViewController: UIViewController {
 }
 
 extension EditViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-          self.dismiss(animated: true, completion: nil)
-      }
-    
+
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
 
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
              profileImage.image = image
-             print(info)
         }
          dismiss(animated: true, completion: nil)
      }
