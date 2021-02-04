@@ -1,6 +1,23 @@
 # swift-w2-profile
 모바일 2주차 프로필 저장소
 
+<!doctype html>
+<html lang="ko">
+  <head>
+  <meta charset="utf-8">
+    <title>HTML</title>
+    <style>
+      video { max-width: 80%; display: block; margin: 20px auto; }
+    </style>
+  </head>
+  <body>
+    <video controls>
+      <source src="https://user-images.githubusercontent.com/59315024/106902803-9165d200-673c-11eb-933e-bfecc442b876.mov" type="video/mov">
+      <strong>Your browser does not support the video tag.</strong>
+    </video>
+  </body>
+</html>
+
 <video autoplay controls loop muted>
   <source src="https://user-images.githubusercontent.com/59315024/106902803-9165d200-673c-11eb-933e-bfecc442b876.mov" type="video/mov">
   지원되지 않습니다.
