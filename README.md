@@ -1,6 +1,12 @@
 # swift-w2-profile
 모바일 2주차 프로필 저장소
 
+<video autoplay controls loop muted>
+  <source src="https://user-images.githubusercontent.com/59315024/106902803-9165d200-673c-11eb-933e-bfecc442b876.mov" type="video/mov">
+  지원되지 않습니다.
+</video>
+
+
 # 2021.01.11
 1. TabBar Controller 추가 및 Initial ViewContoller로 지정 - Bar Title -> Item1
 2. 또 다른 View Controller 생성 후 Bar Title -> Item2
